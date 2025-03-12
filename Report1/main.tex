@@ -1,0 +1,83 @@
+\documentclass[twoside,a4paper]{article}
+\usepackage{geometry}
+\newgeometry{
+  top=0.75in,
+  bottom=0.75in,
+  outer=1in,
+  inner=1in,
+}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+
+
+\addbibresource{mybibliography.bib}
+\title{Report 1: }
+\title{\textbf{FIT: Report 1} \\[1ex] \Large \underline{Handwriting detection and Note Conversion using OCR}?
+}
+\author{Barot H, Krzyszosiak M, Markowicz J, Milewski M, Pietka Ł, Sobczak M}
+\date{March 12 2025}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\section{Introduction}
+The aim of this project is to create a tool for digitizing handwritten notes written in the English language into readable text in ASCII format. The tool utilized in this project are existing OCR models with various preprocessing techniques applied to training data in order to minimize computational time and discard unnecessary information. \\\\
+The applicability of such a tool is rather high as it would allow for a streamlined process of digital note making and sharing for those who prefer a traditional method of note keeping. In addition, such a tool could be utilized to increase the efficiency of tutors in correcting the test papers of their students.
+
+\subsection{Background Knowledge}
+This project primarily focuses on the use of Optical Character Recognition (OCR) models to convert handwritten text into digital text. 
+OCR is a technology that is used to convert different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. The OCR technology is used to convert virtually any type of image containing written text (typed, handwritten, or printed) into machine-readable text data. \\\
+
+\subsection{Problem Statement}
+The main problem that this project aims to solve is the inefficiency of converting handwritten notes into digital text. 
+This is a common problem faced by students, teachers, and professionals who prefer to take notes by hand. 
+The process of converting handwritten notes into digital text is time-consuming and error-prone. 
+This project aims to develop a tool that can automate this process and make it more efficient and accurate. \\\
+ 
+\section{Methodology and Procedure}
+There are various steps involved in the process of converting handwritten notes into digital text using OCR technology and it is best to break down the problem into smaller problems.
+The following steps are involved in the process:
+\begin{enumerate}
+    \item Data Collection
+    \item Data Preprocessing
+    \item Model Training
+    \item Model Evaluation
+    \item Model Deployment
+\end{enumerate}
+
+\subsection{Data Collection}
+The first problem is to decide the type of data that will be used to train the OCR model. It is relatively easy to implement an OCR model that recognises single character. Since, it's only job is to conver that one specific character.
+But when it comes to whole sentences, pages and books, the problem becomes more complex. The model still has to recognise single characters, but also their placement relative to other characters.
+
+Hence, we need a data set that contains images of handwritten text and the corresponding text that is written in the image with it's relative location on the image. 
+
+
+\subsection{Data Preprocessing}
+
+The preprocessing of the data is a crucial step in the process of converting handwritten notes into digital text. When training with a large data set there are certain variables that need to be controlled.
+Such as brightness levels, the angle of the image, the size of the image, and the quality of the image. Since the end user will not be taking these pictures in ideal and controlled conditions,
+a certain amount of preprocessing is required to make all images have the same features. 
+Here is a list of variables that need to be controlled:
+\begin{itemize}
+    \item Brightness levels
+    \item Image size
+    \item Image quality
+    \item Image angle 
+    \item Coloured image should be converted to grayscale
+\end{itemize}
+For \textbf{brightness levels}, the images should be converted to grayscale. Then a transformation called histogram equalization can be performed to normalize the brightness levels. 
+Histogram equalization improves the contrast of an image by spreading out the most frequent intensity values, making the histogram of the output image approximately uniform.~\cite{OpenCV_Histogram_Equalization}
+
+
+
+
+\printbibliography
+\end{document}

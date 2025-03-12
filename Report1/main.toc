@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Introduction}{1}{}%
+\contentsline {subsection}{\numberline {1.1}Background Knowledge}{1}{}%
+\contentsline {subsection}{\numberline {1.2}Problem Statement}{1}{}%
+\contentsline {section}{\numberline {2}Methodology and Procedure}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Data Collection}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Data Preprocessing}{2}{}%
+\contentsline {section}{\numberline {3}Analysis}{2}{}%
+\contentsline {section}{\numberline {4}Evaluation}{2}{}%
+\contentsline {section}{\numberline {5}Conclution}{2}{}%
