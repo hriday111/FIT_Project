@@ -1,5 +1,6 @@
 \documentclass[twoside,a4paper]{article}
 \usepackage{geometry}
+%for some reason the compiler kills itself with {comment} package
 \newgeometry{
   top=0.75in,
   bottom=0.75in,
@@ -20,7 +21,7 @@ sorting=ynt
 
 \addbibresource{mybibliography.bib}
 \title{Report 1: }
-\title{\textbf{FIT: Report 1} \\[1ex] \Large \underline{Handwriting detection and Note Conversion using OCR}?
+\title{\textbf{FIT: Report 1} \\[1ex] \Large \underline{Handwriting detection and Note Conversion using OCR}
 }
 \author{Barot H, Krzyszosiak M, Markowicz J, Milewski M, Pietka Ł, Sobczak M}
 \date{March 12 2025}
@@ -28,22 +29,28 @@ sorting=ynt
 
 \maketitle
 \tableofcontents
+\newpage
 \section{Introduction}
 The aim of this project is to create a tool for digitizing handwritten notes written in the English language into readable text in ASCII format. The tool utilized in this project are existing OCR models with various preprocessing techniques applied to training data in order to minimize computational time and discard unnecessary information. \\\\
-The applicability of such a tool is rather high as it would allow for a streamlined process of digital note making and sharing for those who prefer a traditional method of note keeping. In addition, such a tool could be utilized to increase the efficiency of tutors in correcting the test papers of their students.
+We feel the applicability of such a tool is rather high as it would allow for a streamlined process of digital note making and sharing for those who prefer a traditional method of note keeping. In addition, such a tool could be utilized to increase the efficiency of tutors in correcting the test papers of their students.
 
 \subsection{Background Knowledge}
-This project primarily focuses on the use of Optical Character Recognition (OCR) models to convert handwritten text into digital text. 
-OCR is a technology that is used to convert different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. The OCR technology is used to convert virtually any type of image containing written text (typed, handwritten, or printed) into machine-readable text data. \\\
+This project focuses primarily on the use of Optical Character Recognition (OCR) models to convert handwritten text into digital text. 
+OCR is a technology that is used to convert different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into text files that can be easily edited, searched, and stored on a computer.\\
+
+
+%i think its better to keep the background knowledge short, he said to just give the term and a citation for stuff instead of explanations. 
+%OCR is a technology that is used to convert different types of documents, such as scanned paper documents, PDF files, or images captured by a digital camera, into editable and searchable data. The OCR technology is used to convert virtually any type of image containing written text (typed, handwritten, or printed) into machine-readable text data. \\
+
 
 \subsection{Problem Statement}
-The main problem that this project aims to solve is the inefficiency of converting handwritten notes into digital text. 
-This is a common problem faced by students, teachers, and professionals who prefer to take notes by hand. 
+The main problem that this project aims to solve is the inefficiency of converting handwritten notes to digital text. 
+This is a common problem for students, teachers, and professionals who prefer to take notes by hand. 
 The process of converting handwritten notes into digital text is time-consuming and error-prone. 
-This project aims to develop a tool that can automate this process and make it more efficient and accurate. \\\
+This project aims to develop a tool that can automate this process and make it more efficient and accurate. \\
  
 \section{Methodology and Procedure}
-There are various steps involved in the process of converting handwritten notes into digital text using OCR technology and it is best to break down the problem into smaller problems.
+There are various steps involved in the process of converting handwritten notes into digital text using OCR technology, and it is best to break down the problem into smaller problems.
 The following steps are involved in the process:
 \begin{enumerate}
     \item Data Collection
@@ -54,30 +61,50 @@ The following steps are involved in the process:
 \end{enumerate}
 
 \subsection{Data Collection}
-The first problem is to decide the type of data that will be used to train the OCR model. It is relatively easy to implement an OCR model that recognises single character. Since, it's only job is to conver that one specific character.
-But when it comes to whole sentences, pages and books, the problem becomes more complex. The model still has to recognise single characters, but also their placement relative to other characters.
 
-Hence, we need a data set that contains images of handwritten text and the corresponding text that is written in the image with it's relative location on the image. 
+%The first problem is to decide the type of data that will be used to train the OCR model. It is relatively easy to implement an OCR model that recognizes single characters. Since, it's only job is to convert that one specific character.
+%But when it comes to whole sentences, pages, and books, the problem becomes more complex. The model still has to recognize single characters, but also their placement relative to other characters.
 
+%Hence, we need a data set that contains images of handwritten text and the corresponding text that is written in the image with it's relative location on the image. 
 
+The first problem we faced was deciding what kind of data we should collect to train the OCR model.\\
+    %There are many existing models on the Internet that are freely available and easy to implement into our project, however we still needed to train it on data that would fit the purpose of our project.
+    %feels redundant after i wrote it, feel free to uncomment if you disagree
+We decided to use the freely available TrOCR model as it comes pre-trained for simple single-word recognition problems, however it struggles with handwriting and full documents and thus needed to be fine tuned.\\
+Data found in the real world would differ in many aspects as the equipment used to take the images, the lighting used and the handwriting of each person may vary, as such, the data should cover different lighting conditions, various handwriting styles and varied image qualities (within reason). \\
+For the training data we used the GNHK dataset [1] which consists of real world examples of handwriting suitable for training and testing of the model. \\
+The rationale behind choosing this dataset was simple as the data provided aligns with our goal allowing us to fine tune the model for the specific purpose of recognizing handwritten notes.\\
+For the testing data we plan to utilize both the GNHK dataset examples and our own handwritten notes.
+%i dont know how to add citations, https://www.goodnotes.com/gnhk , ideally this would be a citation in [1].
+
+\pagebreak
 \subsection{Data Preprocessing}
 
-The preprocessing of the data is a crucial step in the process of converting handwritten notes into digital text. When training with a large data set there are certain variables that need to be controlled.
-Such as brightness levels, the angle of the image, the size of the image, and the quality of the image. Since the end user will not be taking these pictures in ideal and controlled conditions,
-a certain amount of preprocessing is required to make all images have the same features. 
-Here is a list of variables that need to be controlled:
+%The preprocessing of the training data as well as real data is a crucial step in the process of converting handwritten notes into digital text as it both narrows down on what the model should be trained for and reduces the computational time.\\
+%When normalizing data from different sources within a large data set there are certain variables that need to be controlled.
+%Such as brightness levels, the angle of the image, the size of the image, and the quality of the image. Since the end user will not be taking these pictures in ideal and controlled conditions,
+%a certain amount of preprocessing is required to make all images have the same features. 
+The data obtained for training and usage may come from different sources due to equipment used (in this case a camera) or the quality standards, and thus certain variables need to be controlled through normalization to provide any significant information. The preprocessing of data aims to solve the problem of controlling the quality of data used to fine-tune the model for our purpose, reduce the computational time, and narrow down the information we want to extract from real data.\\
+After reading research papers on the subject [2], we decided on a list of variables that need to be controlled, and the corresponding preprocessing approaches:
+%[2] relevant literature: https://arxiv.org/pdf/1509.03456
 \begin{itemize}
-    \item Brightness levels
+    \item Brightness levels and lighting
     \item Image size
-    \item Image quality
-    \item Image angle 
+    \item Image resolution
     \item Coloured image should be converted to grayscale
+    \item Geometric distortions caused by the angle of the camera
+    \item Compression and artifacts.
 \end{itemize}
-For \textbf{brightness levels}, the images should be converted to grayscale. Then a transformation called histogram equalization can be performed to normalize the brightness levels. 
-Histogram equalization improves the contrast of an image by spreading out the most frequent intensity values, making the histogram of the output image approximately uniform.~\cite{OpenCV_Histogram_Equalization}
+For \textbf{brightness levels} and \textbf{colours}, the images should be converted to grayscale for increased accuracy. Then a transformation called histogram equalization can be performed to normalize the brightness levels.\\
+Histogram equalization improves the contrast of an image by spreading out the most frequent intensity values, making the histogram of the output image approximately uniform, for that purpose we utilized the relevant function in the OpenCV library.~\cite{OpenCV_Histogram_Equalization}\\
+A thresholding algorithm should also be used to separate the text and the background, including phenomena such as shadows caused by lighting which obscure text, for this purpose we utilize Otsu thresholding [3] via the relevant OpenCV function [4].
+%[3] relevant sources: https://arxiv.org/pdf/1509.03456 section 3.4 ; [4] https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+%idk what to write about iamge size and resolution, my take is throw out the data, upscaling seems pointless
+%perhaps we can add some images to show as examples of the preprocessing we use or maybe a block diagram of the process like in the paper
 
-
-
-
+\subsection{Limitations}
+In addition to all the tools and techniques utilized we feel, it is important to note the limitations of the assumptions and data collection.\\
+The project assumes that images will be taken with the quality that is within reason, as such images should be taken with the intent of being legible, and thus input data with significant resolution problems, or pitch dark lighting ought to be ignored as they are not representative of the problem we aim to solve.\\
+The dataset we used presents a vast amount of images differing in quality and handwriting styles however we understand that more sources could be utilized.\\
 \printbibliography
 \end{document}
