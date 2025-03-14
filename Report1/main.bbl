@@ -1,0 +1,123 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{ynt/global//global/global/global}
+    \entry{Tensmeyer2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d90668393c0a553bfffa9c255ac96cb6}{%
+           family={Tensmeyer},
+           familyi={T\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=12c001e504070dde12834c7dc68fd98d}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc784b21af7f834799fde9598384d230}
+      \strng{fullhash}{dc784b21af7f834799fde9598384d230}
+      \strng{fullhashraw}{dc784b21af7f834799fde9598384d230}
+      \strng{bibnamehash}{dc784b21af7f834799fde9598384d230}
+      \strng{authorbibnamehash}{dc784b21af7f834799fde9598384d230}
+      \strng{authornamehash}{dc784b21af7f834799fde9598384d230}
+      \strng{authorfullhash}{dc784b21af7f834799fde9598384d230}
+      \strng{authorfullhashraw}{dc784b21af7f834799fde9598384d230}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Document Image Binarization using Recurrent Neural Networks}
+      \field{volume}{arXiv:1509.03456}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1509.03456
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1509.03456
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1509.03456
+      \endverb
+    \endentry
+    \entry{OpenCV_Histogram_Equalization}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fa00744813e15e4ce9f738410a62b1af}{%
+           family={{OpenCV Documentation Team}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{fullhash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{fullhashraw}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{bibnamehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authorbibnamehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authornamehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authorfullhash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authorfullhashraw}{fa00744813e15e4ce9f738410a62b1af}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{OpenCV Documentation}
+      \field{note}{Accessed: 12 March 2025}
+      \field{title}{Histogram Equalization in OpenCV}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html
+      \endverb
+    \endentry
+    \entry{OpenCVThresholding}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5bd3dfdc302c8d0660444d98cf3baa60}{%
+           family={{OpenCV Team}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{fullhash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{fullhashraw}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{bibnamehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authorbibnamehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authornamehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authorfullhash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authorfullhashraw}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: March 12, 2025}
+      \field{title}{Image Thresholding - OpenCV Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

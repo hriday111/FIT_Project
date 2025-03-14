@@ -14,10 +14,9 @@
 \usepackage{float}
 \usepackage[
 backend=biber,
-style=alphabetic,
+style=numeric,
 sorting=ynt
 ]{biblatex}
-
 
 \addbibresource{mybibliography.bib}
 \title{Report 1: }
@@ -97,14 +96,22 @@ After reading research papers on the subject [2], we decided on a list of variab
 \end{itemize}
 For \textbf{brightness levels} and \textbf{colours}, the images should be converted to grayscale for increased accuracy. Then a transformation called histogram equalization can be performed to normalize the brightness levels.\\
 Histogram equalization improves the contrast of an image by spreading out the most frequent intensity values, making the histogram of the output image approximately uniform, for that purpose we utilized the relevant function in the OpenCV library.~\cite{OpenCV_Histogram_Equalization}\\
-A thresholding algorithm should also be used to separate the text and the background, including phenomena such as shadows caused by lighting which obscure text, for this purpose we utilize Otsu thresholding [3] via the relevant OpenCV function [4].
+A thresholding algorithm should also be used to separate the text and the background, including phenomena such as shadows caused by lighting which obscure text, for this purpose we utilize Otsu thresholding~\cite{Tensmeyer2015} via the relevant OpenCV function~\cite{OpenCVThresholding}.
 %[3] relevant sources: https://arxiv.org/pdf/1509.03456 section 3.4 ; [4] https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
 %idk what to write about iamge size and resolution, my take is throw out the data, upscaling seems pointless
 %perhaps we can add some images to show as examples of the preprocessing we use or maybe a block diagram of the process like in the paper
+\\
+For \textbf{image size} and \textbf{resolution}, it is important to ensure that all images fed into the model are of a consistent size and resolution. This helps in maintaining uniformity and reduces the complexity of the model. Images that are too small may not contain enough detail for accurate recognition, while images that are too large may introduce unnecessary computational overhead. Therefore, resizing images to a standard resolution is a crucial preprocessing step. We used OpenCV to resize all images to a standard resolution of 300 DPI, which is a common resolution for document scanning and provides a good balance between detail and computational efficiency.
+\\
+For \textbf{geometric distortions}, images may be taken at various angles, leading to distortions that can affect the accuracy of the OCR model. To correct these distortions, we applied geometric transformations such as rotation and perspective correction. These transformations help in aligning the text properly, making it easier for the OCR model to recognize the characters accurately. OpenCV provides functions for these transformations, which we utilized to preprocess the images.
+\\
+For \textbf{compression and artifacts}, images may suffer from compression artifacts, especially if they are saved in lossy formats like JPEG. These artifacts can introduce noise and reduce the quality of the image. To mitigate this, we saved all images in a lossless format like PNG during preprocessing. Additionally, we applied denoising techniques using OpenCV to remove any artifacts and enhance the quality of the images.
+
 
 \subsection{Limitations}
 In addition to all the tools and techniques utilized we feel, it is important to note the limitations of the assumptions and data collection.\\
 The project assumes that images will be taken with the quality that is within reason, as such images should be taken with the intent of being legible, and thus input data with significant resolution problems, or pitch dark lighting ought to be ignored as they are not representative of the problem we aim to solve.\\
 The dataset we used presents a vast amount of images differing in quality and handwriting styles however we understand that more sources could be utilized.\\
+
 \printbibliography
 \end{document}
