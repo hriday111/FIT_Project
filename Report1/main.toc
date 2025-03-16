@@ -4,4 +4,4 @@
 \contentsline {section}{\numberline {2}Methodology and Procedure}{2}{}%
 \contentsline {subsection}{\numberline {2.1}Data Collection}{2}{}%
 \contentsline {subsection}{\numberline {2.2}Data Preprocessing}{3}{}%
-\contentsline {subsection}{\numberline {2.3}Limitations}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Limitations}{4}{}%
