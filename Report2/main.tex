@@ -1,0 +1,46 @@
+\documentclass[twoside,a4paper]{article}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{tabu}
+%for some reason the compiler kills itself with {comment} package
+\newgeometry{
+  top=0.75in,
+  bottom=0.75in,
+  outer=1in,
+  inner=1in,
+}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{cancel}
+\usepackage{float}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=none
+]{biblatex}
+
+\addbibresource{mybibliography.bib}
+\title{Report 1: }
+\title{\textbf{FIT: Report 1} \\[1ex] \Large \underline{Handwriting detection and Note Conversion using OCR}
+}
+\author{Pietka Ł, Barot H, Krzyszosiak M, Markowicz J, Milewski M, Sobczak M}
+\date{March 12 2025}
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+\section{Re-evaluating Report 1}
+% create a list of 3 items
+\begin{itemize}
+    \item \textbf{Problem Statment: }
+    \item \textbf{Target Population (End user): }
+    \item \textbf{Aim of the Project: }
+\end{itemize}
+\section{Data Collection Procedure: }
+\section{Raw Data (samples and syntatic characteristics): }
+\section{Normalization of Raw Data: }
+\section{Moving Forward (symantics of processed data): }
+\printbibliography
+\end{document}
