@@ -1,0 +1,55 @@
+Report 1 changes
+What kind of handwriting we are interested in, where does the data come from, why do you want to convert it into digital form, what specific handwritten notes written in the English are you referring to?
+Reliable description of data/signal/observations (in the context of handwritten notes):
+Databases characterization with specific reasoning:
+Data preprocessing based on quality parameters
+Methodology and procedure
+
+The aim of the project is to create a program utilizing OCR technology, which allows for recognition and digitization of handwritten notes into easily readable and storable text documents on a computer.
+Reasoning for the project:
+- Traditional note taking is simple and cheap however organizing and preserving is difficult (water damage, physical space, mechanical damage).
+- Digitized notes allow for easy preservation and enables faster sharing of information
+
+Precise definition of notes we will consider when developing the project:
+- Handwritten (most common types to be used by students)
+	- Print handwriting
+	- D'Nealian manuscript (middle-ground between print and cursive)
+	- Italics
+	- What is not included: Cursive, Caligraphy, Ineligable scribbles
+- Using plain English
+- Utilizing at most digits, latin alphabet characters and punctuation symbols (ASCII characters)
+- The content may include: English text, top to bottom, left to right paragraphs structures, short simple single-line horizontal equations, notes which don't follow a standard placement but follow the left-right order, handwritten code snippets
+- The content will not include: Graphs, drawings, complex mathematical equations (utilizing vertical division, anything beyond + - x /), multi-column structures
+Reasoning: The listed components and symbols allow for creating notes for most subjects excluding STEM subjects for which tools such as LateX or note taking apps are largely preferred.
+We wish to create this tool in order to allow for digitization of simple notes for subjects which don't require specialized symbols, the listed symbols account for most of non-math related notes allowing for anything from simple sentences to lengthy theorems, itemized lists and definitions of terms.
+
+Preliminary characterization of signals
+- Equipment used to gather data:
+	- Phone cameras (assuming current era phones)
+	- Optical scanners (300 DPI is the industry standard)
+- Aspects of the data
+	- Lighting levels (histogram, contrast)
+	- Geometric distortions caused by the angle (with the assumption of top down/straight ahead view) (OpenCV function)
+	- Quality and attributes of the paper (printing paper, lined paper, checkered paper)
+	- Different positioning of the paper in relation to the frame (zooming)
+	- Artifacts stemming from compression and equipment error
+	- Words and letters may be individually tilted or rotated
+	- Words or letters may be crossed out (common occurence when writing notes)
+	- Words may be misspelled
+
+Literature review: articles we mentioned
+Datasets reflect our assumptions of data
+
+Databases characterization:
+- MNIST -
+- GHNK -
+- IAM -
+| https://fki.tic.heia-fr.ch/databases/iam-handwriting-database |
+Reasoning: they are free, they are highly reputable, they cover the criteria listed
+
+Tools:
+OpenCV - image processing
+TensorFlow
+TrOCR
+Reasoning - Lack of experience in Machine Learning, those resources have widespread documentation and free tutorials on how to create working software
+

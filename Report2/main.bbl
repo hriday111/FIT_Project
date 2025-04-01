@@ -16,5 +16,44 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Lee2021}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=f5ea6b7ff66ab05fb56e828d44ab12c5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Alex\bibnamedelimb W.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=6ad6f0f7a9dd506db5776d182df60bf2}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e0c494d88f914f2ca2951a46b4f3b7d}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{fullhash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{fullhashraw}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{bibnamehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authorbibnamehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authornamehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authorfullhash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authorfullhashraw}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference of Document Analysis and Recognition (ICDAR)}
+      \field{title}{GNHK: A Dataset for English Handwriting in the Wild}
+      \field{year}{2021}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
