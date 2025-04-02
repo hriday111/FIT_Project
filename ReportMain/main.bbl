@@ -1,0 +1,215 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{Lee2021}{misc}{}{}
+      \name{author}{3}{}{%
+        {{hash=f5ea6b7ff66ab05fb56e828d44ab12c5}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Alex\bibnamedelimb W.\bibnamedelimi C.},
+           giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=6ad6f0f7a9dd506db5776d182df60bf2}{%
+           family={Chung},
+           familyi={C\bibinitperiod},
+           given={Jonathan},
+           giveni={J\bibinitperiod}}}%
+        {{hash=3e0c494d88f914f2ca2951a46b4f3b7d}{%
+           family={Lee},
+           familyi={L\bibinitperiod},
+           given={Marco},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{fullhash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{fullhashraw}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{bibnamehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authorbibnamehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authornamehash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authorfullhash}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \strng{authorfullhashraw}{5267583bbc80ec45a039cf1a1a1b4c89}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{International Conference of Document Analysis and Recognition (ICDAR)}
+      \field{title}{GNHK: A Dataset for English Handwriting in the Wild}
+      \field{year}{2021}
+    \endentry
+    \entry{CEDAR_Dataset}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=a8d99c972329151549c0619d1e76be8d}{%
+           family={Buffalo},
+           familyi={B\bibinitperiod},
+           given={University},
+           giveni={U\bibinitperiod},
+           prefix={at},
+           prefixi={a\bibinitperiod}}}%
+      }
+      \strng{namehash}{a8d99c972329151549c0619d1e76be8d}
+      \strng{fullhash}{a8d99c972329151549c0619d1e76be8d}
+      \strng{fullhashraw}{a8d99c972329151549c0619d1e76be8d}
+      \strng{bibnamehash}{a8d99c972329151549c0619d1e76be8d}
+      \strng{authorbibnamehash}{a8d99c972329151549c0619d1e76be8d}
+      \strng{authornamehash}{a8d99c972329151549c0619d1e76be8d}
+      \strng{authorfullhash}{a8d99c972329151549c0619d1e76be8d}
+      \strng{authorfullhashraw}{a8d99c972329151549c0619d1e76be8d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{note}{Accessed: March 16, 2025}
+      \verb{urlraw}
+      \verb https://cedar.buffalo.edu/Databases/index.html
+      \endverb
+      \verb{url}
+      \verb https://cedar.buffalo.edu/Databases/index.html
+      \endverb
+    \endentry
+    \entry{MNIST_Dataset}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=929f4946502c37a185835b21e9b86309}{%
+           family={Yann\bibnamedelima LeCun},
+           familyi={Y\bibinitperiod\bibinitdelim L\bibinitperiod},
+           given={Christopher\bibnamedelimb J.C.\bibnamedelimi Burges},
+           giveni={C\bibinitperiod\bibinitdelim J\bibinitperiod\bibinitdelim B\bibinitperiod},
+           suffix={Corinna\bibnamedelima Cortes},
+           suffixi={C\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{929f4946502c37a185835b21e9b86309}
+      \strng{fullhash}{929f4946502c37a185835b21e9b86309}
+      \strng{fullhashraw}{929f4946502c37a185835b21e9b86309}
+      \strng{bibnamehash}{929f4946502c37a185835b21e9b86309}
+      \strng{authorbibnamehash}{929f4946502c37a185835b21e9b86309}
+      \strng{authornamehash}{929f4946502c37a185835b21e9b86309}
+      \strng{authorfullhash}{929f4946502c37a185835b21e9b86309}
+      \strng{authorfullhashraw}{929f4946502c37a185835b21e9b86309}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{note}{Accessed: March 16, 2025}
+      \verb{urlraw}
+      \verb https://web.archive.org/web/20240119012243/http://yann.lecun.com/exdb/mnist/
+      \endverb
+      \verb{url}
+      \verb https://web.archive.org/web/20240119012243/http://yann.lecun.com/exdb/mnist/
+      \endverb
+    \endentry
+    \entry{Tensmeyer2015}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d90668393c0a553bfffa9c255ac96cb6}{%
+           family={Tensmeyer},
+           familyi={T\bibinitperiod},
+           given={Chris},
+           giveni={C\bibinitperiod}}}%
+        {{hash=12c001e504070dde12834c7dc68fd98d}{%
+           family={Martinez},
+           familyi={M\bibinitperiod},
+           given={Tony},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{dc784b21af7f834799fde9598384d230}
+      \strng{fullhash}{dc784b21af7f834799fde9598384d230}
+      \strng{fullhashraw}{dc784b21af7f834799fde9598384d230}
+      \strng{bibnamehash}{dc784b21af7f834799fde9598384d230}
+      \strng{authorbibnamehash}{dc784b21af7f834799fde9598384d230}
+      \strng{authornamehash}{dc784b21af7f834799fde9598384d230}
+      \strng{authorfullhash}{dc784b21af7f834799fde9598384d230}
+      \strng{authorfullhashraw}{dc784b21af7f834799fde9598384d230}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{eprintclass}{cs.CV}
+      \field{eprinttype}{arXiv}
+      \field{journaltitle}{arXiv preprint}
+      \field{title}{Document Image Binarization using Recurrent Neural Networks}
+      \field{volume}{arXiv:1509.03456}
+      \field{year}{2015}
+      \verb{eprint}
+      \verb 1509.03456
+      \endverb
+      \verb{urlraw}
+      \verb https://arxiv.org/pdf/1509.03456
+      \endverb
+      \verb{url}
+      \verb https://arxiv.org/pdf/1509.03456
+      \endverb
+    \endentry
+    \entry{OpenCV_Histogram_Equalization}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=fa00744813e15e4ce9f738410a62b1af}{%
+           family={{OpenCV Documentation Team}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{fullhash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{fullhashraw}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{bibnamehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authorbibnamehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authornamehash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authorfullhash}{fa00744813e15e4ce9f738410a62b1af}
+      \strng{authorfullhashraw}{fa00744813e15e4ce9f738410a62b1af}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{howpublished}{OpenCV Documentation}
+      \field{note}{Accessed: 12 March 2025}
+      \field{title}{Histogram Equalization in OpenCV}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/4.x/d5/daf/tutorial_py_histogram_equalization.html
+      \endverb
+    \endentry
+    \entry{OpenCVThresholding}{misc}{}{}
+      \name{author}{1}{}{%
+        {{hash=5bd3dfdc302c8d0660444d98cf3baa60}{%
+           family={{OpenCV Team}},
+           familyi={O\bibinitperiod}}}%
+      }
+      \strng{namehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{fullhash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{fullhashraw}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{bibnamehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authorbibnamehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authornamehash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authorfullhash}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \strng{authorfullhashraw}{5bd3dfdc302c8d0660444d98cf3baa60}
+      \field{sortinit}{8}
+      \field{sortinithash}{a231b008ebf0ecbe0b4d96dcc159445f}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{Accessed: March 12, 2025}
+      \field{title}{Image Thresholding - OpenCV Documentation}
+      \field{year}{2024}
+      \verb{urlraw}
+      \verb https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+      \endverb
+      \verb{url}
+      \verb https://docs.opencv.org/4.x/d7/d4d/tutorial_py_thresholding.html
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

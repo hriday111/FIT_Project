@@ -1,0 +1,4 @@
+adaptive_gaussian1 = cv.adaptiveThreshold(img, max_val, cv.ADAPTIVE_THRESH_GAUSSIAN_C,
+                                         cv.THRESH_BINARY, 17, 5)
+
+gray1 = cv.medianBlur(gray, 3)

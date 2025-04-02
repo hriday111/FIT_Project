@@ -1,0 +1,15 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}Introduction}{2}{}%
+\contentsline {subsection}{\numberline {1.1}Background Knowledge}{2}{}%
+\contentsline {subsection}{\numberline {1.2}Problem Statement}{2}{}%
+\contentsline {section}{\numberline {2}Methodology and Procedure}{2}{}%
+\contentsline {subsection}{\numberline {2.1}Data Collection}{2}{}%
+\contentsline {subsection}{\numberline {2.2}Data Preprocessing}{3}{}%
+\contentsline {subsection}{\numberline {2.3}Limitations}{4}{}%
+\contentsline {section}{\numberline {3}Re-evaluating: Report 1}{5}{}%
+\contentsline {subsection}{\numberline {3.1}Problem Statement}{5}{}%
+\contentsline {section}{\numberline {4}Data Collection Procedure: }{5}{}%
+\contentsline {section}{\numberline {5}Raw Data (samples and syntactic characteristics): }{6}{}%
+\contentsline {section}{\numberline {6}Normalization of Raw Data: }{7}{}%
+\contentsline {section}{\numberline {7}Extraction of words/letters: }{7}{}%
+\contentsline {section}{\numberline {8}Closing Thoughs: }{7}{}%
