@@ -1,0 +1,24 @@
+based on Wikipedia:
+  Histogram equalization is a method in image processing of contrast adjustment using the image's histogram. 
+  This technique typically enhances the overall contrast of images,
+   particularly when the image has a limited range of intensity values. 
+   By redistributing the intensity levels more evenly across the entire histogram, it makes better use of the available dynamic range. 
+   As a result, areas with low local contrast become more visually distinct.   Histogram equalization achieves this by redistributing 
+   frequently occurring intensity values, which are often responsible for reduced image contrast. 
+
+---------------------------------------- Histogram images (｡◕‿‿◕｡) -------------------------------------------
+
+This method is particularly usefull with images that both background and foreground are in similar tone, such like xray of bone. 
+Histogram equalization often produce non natural effects on image, but it is good for scientific data collection. 
+To our advantage OpenCV has already implemented method for this algorithm.
+
+---------------------------------------- put image of xray bone (◉‿◉) ----------------------------------------
+
+Despite histogram equalization key advantages we will not use it in our project. 
+The main disadvantage is loss of details in in areas that are too bright or too dark and possibility of data loss in great contrasted areas. 
+This algorithm can also make small artifacts more visible.
+
+
+---------------------------------------- images of artifacts ᕕ(╭ರ╭ ͟ʖ╮•́)⊃¤=(————-------------------------------
+
+Histogram equalization may be used only in specific conditions which doesn`t much wanted flexibility of our model.

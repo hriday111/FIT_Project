@@ -17,13 +17,17 @@ _, otsu_thresh = cv.threshold(img, 0, max_val, cv.THRESH_BINARY + cv.THRESH_OTSU
 
 # Apply Adaptive Mean Thresholding
 adaptive_mean = cv.adaptiveThreshold(img, max_val, cv.ADAPTIVE_THRESH_MEAN_C,
-                                     cv.THRESH_BINARY, 11, 2)
+                                     cv.THRESH_BINARY, 17, 6.5)
 
 # Apply Adaptive Gaussian Thresholding
 adaptive_gaussian = cv.adaptiveThreshold(img, max_val, cv.ADAPTIVE_THRESH_GAUSSIAN_C,
                                          cv.THRESH_BINARY, 17, 5)
 
 # Display results side by side
+
+cv.imwrite(os.path.join(output_dir, 'otsu_thresh.jpg'), otsu_thresh)
+cv.imwrite(os.path.join(output_dir, 'adaptive_mean.jpg'), adaptive_mean)
+cv.imwrite(os.path.join(output_dir, 'adaptive_gaussian.jpg'), adaptive_gaussian)
 plt.figure(figsize=(15, 5))
 
 plt.subplot(1, 3, 1)

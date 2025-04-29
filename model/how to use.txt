@@ -1,0 +1,6 @@
+you need python and you need to have pip installed wx, json and pathlib libraries for wxpython.py
+images need to be in the output folder named cont<number>.png (starting from 0)
+put the ground truth value in text box, enter or press the button to get next letter
+result in progress.json
+fox_box.jpg is the uncropped image for "help"
+normalize.py can be used to create output content if we want more letters, just uncomment the imwrite part near the end

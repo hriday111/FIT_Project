@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.12)  2 APR 2025 21:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.12)  3 APR 2025 00:27
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -788,15 +788,15 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [5]
-<L1.png, id=27, 4300.065pt x 5733.42pt>
-File: L1.png Graphic file (type png)
-<use L1.png>
-Package pdftex.def Info: L1.png  used on input line 197.
-(pdftex.def)             Requested size: 203.83417pt x 271.72789pt.
-<kuba1.jpg, id=28, 1868.9825pt x 2055.68pt>
-File: kuba1.jpg Graphic file (type jpg)
-<use kuba1.jpg>
-Package pdftex.def Info: kuba1.jpg  used on input line 204.
+<input/L1.png, id=27, 3751.01375pt x 5182.36125pt>
+File: input/L1.png Graphic file (type png)
+<use input/L1.png>
+Package pdftex.def Info: input/L1.png  used on input line 197.
+(pdftex.def)             Requested size: 203.83417pt x 281.59093pt.
+<input/K1.jpg, id=28, 1868.9825pt x 2055.68pt>
+File: input/K1.jpg Graphic file (type jpg)
+<use input/K1.jpg>
+Package pdftex.def Info: input/K1.jpg  used on input line 204.
 (pdftex.def)             Requested size: 203.83417pt x 224.18074pt.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -804,8 +804,28 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 [6 <./VennDiagram_WhatWeNeed.png (PNG copy)>]
+<Comparison_Blues.png, id=32, 1387.584pt x 697.4055pt>
+File: Comparison_Blues.png Graphic file (type png)
+<use Comparison_Blues.png>
+Package pdftex.def Info: Comparison_Blues.png  used on input line 237.
+(pdftex.def)             Requested size: 362.37569pt x 182.1299pt.
 
-[7 <./L1.png> <./kuba1.jpg>] (./main.aux)
+
+[7 <./input/L1.png> <./input/K1.jpg>]
+Underfull \hbox (badness 10000) in paragraph at lines 241--245
+
+ []
+
+<Comparison_Thre.png, id=39, 1387.584pt x 697.4055pt>
+File: Comparison_Thre.png Graphic file (type png)
+<use Comparison_Thre.png>
+Package pdftex.def Info: Comparison_Thre.png  used on input line 252.
+(pdftex.def)             Requested size: 362.37569pt x 182.1299pt.
+
+
+[8 <./Comparison_Blues.png> <./Comparison_Thre.png>]
+
+[9] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -815,10 +835,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 18377 strings out of 473190
- 387293 string characters out of 5715806
- 1194368 words of memory out of 5000000
- 41469 multiletter control sequences out of 15000+600000
+ 18393 strings out of 473190
+ 387776 string characters out of 5715806
+ 1194412 words of memory out of 5000000
+ 41485 multiletter control sequences out of 15000+600000
  572777 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  73i,10n,81p,693b,1795s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -833,10 +853,10 @@ texlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/te
 xlive/2025/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb></usr/local/texl
 ive/2025/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb></usr/local/texliv
 e/2025/texmf-dist/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on main.pdf (7 pages, 22844885 bytes).
+Output written on main.pdf (9 pages, 19070220 bytes).
 PDF statistics:
- 91 PDF objects out of 1000 (max. 8388607)
- 55 compressed objects within 1 object stream
+ 102 PDF objects out of 1000 (max. 8388607)
+ 60 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 26 words of extra memory for PDF output out of 10000 (max. 10000000)
 

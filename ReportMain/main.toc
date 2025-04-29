@@ -11,5 +11,5 @@
 \contentsline {section}{\numberline {4}Data Collection Procedure: }{5}{}%
 \contentsline {section}{\numberline {5}Raw Data (samples and syntactic characteristics): }{6}{}%
 \contentsline {section}{\numberline {6}Normalization of Raw Data: }{7}{}%
-\contentsline {section}{\numberline {7}Extraction of words/letters: }{7}{}%
-\contentsline {section}{\numberline {8}Closing Thoughs: }{7}{}%
+\contentsline {section}{\numberline {7}Extraction of words/letters: }{8}{}%
+\contentsline {section}{\numberline {8}Closing Thoughs: }{8}{}%
